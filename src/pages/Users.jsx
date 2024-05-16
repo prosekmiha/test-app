@@ -18,7 +18,7 @@ const Users = () => {
     const [count, setCount] = useState(10);
 
     async function getUsers() {
-        console.log(skip, count)
+        
         fetch(`https://tat-staging.topapp.si/dashboardapi/api/reports/users?skip=${skip}&count=10&appBundleId=${selectedProject.bundleId}`, {
             method: 'GET',
             headers: {
